@@ -8,22 +8,23 @@ Ionic App Base
 ## app开发环境配置
 环境搭建前，需要安装好android的开发环境，直接安装android studio就行，它会自动安装android sdk这些，但java需要自己提前安装好，关于cordova的android环境
 搭建可以参照[官方说明](https://cordova.apache.org/docs/en/latest/guide/platforms/android/index.html)
-1. 安装Cordova
+1. 安装[node.js](https://nodejs.org/zh-cn/download/)
+2. 安装Cordova [可以参考cordova的android环境搭建](https://cordova.apache.org/docs/en/latest/guide/platforms/android/)
 ```bash
 npm install -g cordova
 ```
-2. 安装Ionic CLI
+3. 安装Ionic CLI
 ```bash
 npm install -g ionic
 ```
 > Note: If you see errors you don't understand, you may want to uninstall previous versions of ionic-cli with npm uninstall -g ionic, clear your cache with npm cache clean and then now install ionic-cli with npm install -g ionic
 
-3. 添加ANDROID_HOME环境变量，配置path环境变量
+4. 添加ANDROID_HOME环境变量，配置path环境变量
 ```bash
 set ANDROID_HOME=C:\<installation location>\android-sdk-windows
 set PATH=%PATH%;%ANDROID_HOME%\tools;%ANDROID_HOME%\platform-tools
 ```
-4. 根据本机中已经安装的android 版本来配置项目运行的android版本
+5. 根据本机中已经安装的android 版本来配置项目运行的android版本
 ```bash
 cordova platform rm android    //卸载
 cordova platform add android@^5.0.0 --save  //配置当前项目运行的android版本，根据自己情况而定
