@@ -73,7 +73,7 @@ Error: Android SDK not found. Make sure that it is installed.
 If it is not at the default location, set the ANDROID_HOME environment variable.
 ```
 **错误原因**
-> cordova 6.x以后默认安装的android版本是6.1.x，google最新的sdk和他们不兼容，需要把covdova中android的版本升级到最新6.2.1
+> cordova 6.x以后默认安装的android版本是6.1.x，这个和Android最新的android sdk tools不兼容，需要把covdova中android的版本升级到最新6.2.1即可，和最新的android sdk tool兼容即可
 
 **解决方法**
 运行如下命令，升级cordova中的android 版本，同时保存android版本到项目中
